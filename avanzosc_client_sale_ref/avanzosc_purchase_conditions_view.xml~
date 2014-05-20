@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem id="av_puchase_conditions_menu" name="Purchase Conditions"
+            parent="purchase.menu_procurement_management" action="action_purchase_conditions"/>
+	  
+
+	  <record id="avpurchase_order_conditions_tree" model="ir.ui.view">
+            <field name="name">purchase.order.conditions.tree</field>
+	    <field name="priority" eval="50"/>
+            <field name="model">pricelist.partnerinfo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Purchase Conditions">
+                    <field name="product_id"/>
+                    <field name="supplier_id"/>
+                    <field name="min_quantity"/>
+                    <field name="price"/>
+		    <field name="min_qty"/>
+		    <field name="delay"/>
+                </tree>
+            </field>
+        </record>
+
+         <record id="avpurchase_order_conditions_search" model="ir.ui.view">
+            <field name="name">purchase.order.conditions.search</field>
+	    <field name="priority" eval="50"/>
+            <field name="model">pricelist.partnerinfo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Purchase Conditions">
+                        <group>
+                        <field name="product_id"/>
+                        <field name="supplier_id"/>
+                        <field name="min_quantity"/>
+			<field name="price"/>
+                        <field name="min_qty" min="Min"/>
+		        <field name="delay"/>
+                        </group>
+                        <newline/>
+                        <group expand="0" string="Group By...">
+                        <filter string="Supplier" icon="terp-partner" domain="[]" context="{'group_by' : 'supplier_id'}" />
+                        <separator orientation="vertical"/>
+                        <filter string="Product" icon="terp-accessories-archiver" domain="[]" context="{'group_by' : 'product_id'}" />
+                        </group>
+               </search>
+            </field>
+        </record>
+
+	<record id="action_purchase_conditions" model="ir.actions.act_window">
+		<field name="res_model">pricelist.partnerinfo</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,search</field>
+		<field eval="avpurchase_order_conditions_tree" name="view_id"/>
+		<field name="search_view_id" ref="avpurchase_order_conditions_search"/>
+		    <field name="help">Condiciones de compra de los proveedores</field>
+    	</record>
+
+    </data>
+</openerp>

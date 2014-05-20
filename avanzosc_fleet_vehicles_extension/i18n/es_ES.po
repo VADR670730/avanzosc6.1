@@ -1,0 +1,320 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* avanzosc_fleet_vehicles_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-16 12:47+0000\n"
+"PO-Revision-Date: 2014-05-16 14:57+0100\n"
+"Last-Translator: Daniel <danielcampos@avanzosc.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: model:ir.model,name:avanzosc_fleet_vehicles_extension.model_import_fuellog
+#: model:ir.ui.menu,name:avanzosc_fleet_vehicles_extension.menu_import_fuellog
+msgid "Import Fuel Log"
+msgstr "Import Fuel Log"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,ambit:0
+msgid "Provincial"
+msgstr "Provincial"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,ambit:0
+msgid "Ambit"
+msgstr "Ambito"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,product_id:0
+msgid "Product Associated"
+msgstr "Producto Asociado"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.vehicles:0
+msgid "Capacity"
+msgstr "Capacidad"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,places4:0
+msgid "Extra Driver Seat"
+msgstr "Asiento Extra conductor"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+msgid "Fuel Data Log Loaded!"
+msgstr "Fuel Data Log Loaded!"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,sphone:0
+msgid "Short phone number"
+msgstr "Teléfono Corto"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: code:addons/avanzosc_fleet_vehicles_extension/avanzosc_fleet_vehicles_extension.py:123
+#: sql_constraint:fleet.vehicles:0
+#, python-format
+msgid "El Vehículo ya existe!"
+msgstr "El Vehículo ya existe!"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,totalplaces:0
+msgid "Total places"
+msgstr "Total places"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:import.fuellog,name:0
+msgid "Filename"
+msgstr "Filename"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,lowboy:0
+msgid "Lowboy"
+msgstr "Plataforma Baja"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: model:ir.model,name:avanzosc_fleet_vehicles_extension.model_fleet_vehicles
+msgid "Holds records of Vehicles"
+msgstr "Guarda los registros de los Vehículos"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,ambit:0
+msgid "International"
+msgstr "International"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+msgid "Import"
+msgstr "Import"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,ambit:0
+msgid "Local"
+msgstr "Local"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.fuellog,time:0
+msgid "Transaction Time"
+msgstr "Transaction Time"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,service:0
+msgid "Urban"
+msgstr "Urbano"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+msgid "Import Refuel Log Info"
+msgstr "Import Refuel Log Info"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,pmr:0
+msgid "Number of PMR doors"
+msgstr "Number of PMR doors"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,service:0
+msgid "Service"
+msgstr "Servicio"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,lphone:0
+msgid "Long phone number"
+msgstr "Long phone number"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,ramp:0
+msgid "Ramp"
+msgstr "Rampa"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,insurance:0
+msgid "Insurance Name"
+msgstr "Insurance Name"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,places3:0
+msgid "Number of DP places"
+msgstr "Number of DP places"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,policy:0
+msgid "Vehicle policy"
+msgstr "Vehicle policy"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: model:ir.model,name:avanzosc_fleet_vehicles_extension.model_fleet_fuellog
+msgid "Records the fuelling entries"
+msgstr "Registros de las entradas de repostaje"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.fuellog:0
+msgid "Fuel Log"
+msgstr "Fuel Log"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,enrolldate:0
+msgid "Enrollment date"
+msgstr "Enrollment date"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,cardexp:0
+msgid "Card Expiration"
+msgstr "Card Expiration"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,places:0
+msgid "Number of seat places"
+msgstr "Number of seat places"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,service:0
+msgid "Discretionary"
+msgstr "Discrecional"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,actodometer:0
+msgid "Actual Odometer"
+msgstr "Actual Odometer"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,viat:0
+msgid "VIA-T"
+msgstr "VIA-T"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+#: model:ir.actions.act_window,name:avanzosc_fleet_vehicles_extension.action_import_refuellog
+msgid "Import Refuel Log"
+msgstr "Import Refuel Log"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,service:0
+msgid "Lines"
+msgstr "Linea"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.fuellog,cost:0
+msgid "Cost Per Ltr"
+msgstr "Cost Per Ltr"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.vehicles:0
+msgid "Extra Information"
+msgstr "Extra Information"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: code:addons/avanzosc_fleet_vehicles_extension/avanzosc_fleet_vehicles_extension.py:122
+#: constraint:fleet.vehicles:0
+#, python-format
+msgid "Error: El nombre del producto y del vehículo deben ser iguales!"
+msgstr "Error: El nombre del producto y del vehículo deben ser iguales!"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,serv_time:0
+msgid "Years in Service"
+msgstr "Años en Servicio"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,wifi:0
+msgid "Wifi number"
+msgstr "Wifi number"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: sql_constraint:fleet.vehicles:0
+msgid "The registration no of the vehicle must be unique !"
+msgstr "The registration no of the vehicle must be unique !"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.vehicles:0
+msgid "Fuel and Maintainace"
+msgstr "Combustible y Mantenimiento"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,frame:0
+msgid "Frame Number"
+msgstr "Número de Bástidor"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: code:addons/avanzosc_fleet_vehicles_extension/wizard/import_refuellog.py:65
+#, python-format
+msgid "UserError"
+msgstr "UserError"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.fuellog,d_number:0
+msgid "Driver Number"
+msgstr "Driver Number"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: code:addons/avanzosc_fleet_vehicles_extension/wizard/import_refuellog.py:65
+#, python-format
+msgid "You need to select a file!"
+msgstr "You need to select a file!"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,depot:0
+msgid "Depot Location"
+msgstr "Depósito"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: selection:fleet.vehicles,ambit:0
+msgid "National"
+msgstr "National"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,places2:0
+msgid "Number of standing places "
+msgstr "Number of standing places "
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+msgid "Accept"
+msgstr "Accept"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,tires:0
+msgid "Tires"
+msgstr "Neumáticos"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.vehicles:0
+msgid "Fuel Details"
+msgstr "Fuel Details"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.fuellog,supplier:0
+msgid "Supplier Station"
+msgstr "Supplier Station"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.vehicles,card:0
+msgid "Card"
+msgstr "Card"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:import.fuellog,data:0
+msgid "File"
+msgstr "File"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:import.fuellog:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: field:fleet.fuellog,engine:0
+msgid "Engine Hours"
+msgstr "Engine Hours"
+
+#. module: avanzosc_fleet_vehicles_extension
+#: view:fleet.vehicles:0
+msgid "Insurance"
+msgstr "Insurance"
+

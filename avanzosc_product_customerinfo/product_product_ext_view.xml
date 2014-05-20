@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="product_normal_form_view_inh_customerinfo">
+			<field name="name">product.normal.form.view.in.customerinfo</field>
+			<field name="model">product.product</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="product.product_normal_form_view" />
+			<field name="arch" type="xml">
+				<field name="seller_ids" position="replace">
+					<field colspan="4" name="seller_ids" nolabel="1" domain="[('is_customer','=',False)]" context="{'is_customer':False, 'uom_id': uom_id}"/>
+				</field>
+				<xpath expr='//form/notebook/page[@string="Suppliers"]' position="after">
+					<page string="Customers">
+						<field colspan="4" name="seller_customer_ids" nolabel="1" domain="[('is_customer','=',True)]" context="{'is_customer':True, 'uom_id': uom_id}"/>
+					</page>
+				</xpath>							
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="product_supplierinfo_form_view_inh_customerinfo">
+			<field name="name">product.supplierinfo.form.view.inh.customerinfo</field>
+			<field name="model">product.supplierinfo</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="product.product_supplierinfo_form_view" />
+			<field name="arch" type="xml">
+				<xpath expr='//form[@string="Supplier Information"]' position="attributes">
+					<attribute name="string">Supplier/Customer Information</attribute>
+				</xpath>					
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="product_supplierinfo_tree_view_inh_customerinfo">
+			<field name="name">product.supplierinfo.tree.view.inh.customerinfo</field>
+			<field name="model">product.supplierinfo</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="product.product_supplierinfo_tree_view" />
+			<field name="arch" type="xml">
+				<xpath expr='//tree[@string="Supplier Information"]' position="attributes">
+					<attribute name="string">Supplier/Customer Information</attribute>
+				</xpath>					
+			</field>
+		</record>
+
+	</data>
+</openerp>

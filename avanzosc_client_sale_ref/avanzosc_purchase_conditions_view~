@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem id="av_puchase_conditions_menu" name="Purchase Conditions"
+            groups="purchase.group_purchase_manager"
+            parent="purchase.menu_procurement_management" sequence="100"/>
+
+          <record id="avpurchase_order_conditions_tree" model="ir.ui.view">
+            <field name="name">purchase.order.conditions.tree</field>
+            <field name="model">conditions.tree</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Purchase Conditions">
+                        <group>
+                        <field name="product_id"/>
+                        <field name="supplier_id"/>
+                        <field name="min_quantity"/>
+			<field name="price"/>
+                        </group>
+                        <newline/>
+                        <group expand="0" string="Group By...">
+                        <filter string="Supplier" icon="terp-partner" domain="[]" context="{'group_by' : 'supplier_id'}" />
+                        <separator orientation="vertical"/>
+                        <filter string="Product" icon="terp-accessories-archiver" domain="[]" context="{'group_by' : 'product_id'}" />
+                        </group>
+               </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>

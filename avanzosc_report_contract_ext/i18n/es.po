@@ -1,0 +1,320 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* avanzosc_report_contract_ext
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-20120523-233315\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-09 13:43+0000\n"
+"PO-Revision-Date: 2013-05-09 15:45+0100\n"
+"Last-Translator: Alfredo <alfredodelafuente@avanzosc.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: avanzosc_report_contract_ext
+#: sql_constraint:purchase.order:0
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique per Company!"
+msgstr "¡La referencia de la compra debe ser única por compañía!"
+
+#. module: avanzosc_report_contract_ext
+#: view:contract.conditions:0
+#: view:hr.contract:0
+#: view:sale.order:0
+msgid "Contract Conditions"
+msgstr "Condiciones Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_contract_select_template_purchase
+#: model:ir.model,name:avanzosc_report_contract_ext.model_contract_select_template_rrhh
+#: model:ir.model,name:avanzosc_report_contract_ext.model_contract_select_template_sale
+msgid "Wizard Select Template"
+msgstr "Wizard Seleccionar Plantilla"
+
+#. module: avanzosc_report_contract_ext
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "¡Error! No se pueden crear compañías recursivas."
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template:0
+#: view:report.contract.template.line:0
+#: view:report.contract.template.master.line:0
+msgid "Group By..."
+msgstr "Agrupado por..."
+
+#. module: avanzosc_report_contract_ext
+#: field:hr.contract,general_contract_conditions_ids:0
+#: field:purchase.order,general_contract_conditions_ids:0
+#: field:sale.order,general_contract_conditions_ids:0
+msgid "General Contract Conditions"
+msgstr "Condiciones generales"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template:0
+msgid "Report Contract Templates"
+msgstr "Plantillas informes contratos"
+
+#. module: avanzosc_report_contract_ext
+#: view:purchase.order:0
+msgid "Contract Conditions Clauses"
+msgstr "Cláusulas de las Condiciones de Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,particular_conditions:0
+#: view:hr.contract:0
+#: view:purchase.order:0
+#: view:report.contract.template:0
+#: field:report.contract.template,particular_conditions_lines_ids:0
+#: view:report.contract.template.line:0
+#: field:report.contract.template.line,particular_conditions:0
+#: view:sale.order:0
+msgid "Particular Conditions"
+msgstr "Condiciones particulares"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template.master.line:0
+msgid "Report Contract Template Master lines"
+msgstr "Líneas maestras plantillas condiciones contratos"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,general_conditions:0
+#: view:hr.contract:0
+#: view:purchase.order:0
+#: view:report.contract.template:0
+#: field:report.contract.template,general_conditions_lines_ids:0
+#: view:report.contract.template.line:0
+#: field:report.contract.template.line,general_conditions:0
+#: view:sale.order:0
+msgid "General Conditions"
+msgstr "Condiciones generales"
+
+#. module: avanzosc_report_contract_ext
+#: sql_constraint:res.company:0
+msgid "The company name must be unique !"
+msgstr "¡El nombre de la compañía debe ser único!"
+
+#. module: avanzosc_report_contract_ext
+#: field:report.contract.template.line,report_contract_template_master_line_id:0
+msgid "Template Master Line"
+msgstr "Líneas maestras plantilla"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.act_window,name:avanzosc_report_contract_ext.act_unique_id_purchase
+#: model:ir.actions.act_window,name:avanzosc_report_contract_ext.act_unique_id_rrhh
+#: model:ir.actions.act_window,name:avanzosc_report_contract_ext.act_unique_id_sale
+msgid "Select Contract Template"
+msgstr "Seleccionar Plantilla Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: selection:contract.conditions,contract_type:0
+#: selection:report.contract.template,contract_type:0
+msgid "RRHH"
+msgstr "RRHH"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template:0
+msgid "Search Report Contract Template"
+msgstr "Busqueda plantilla informe contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,description:0
+#: view:report.contract.template.line:0
+#: field:report.contract.template.line,description:0
+#: view:report.contract.template.master.line:0
+#: field:report.contract.template.master.line,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,hrcontract_order1_ids:0
+#: field:contract.conditions,hrcontract_order2_ids:0
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.report.xml,name:avanzosc_report_contract_ext.avanzosc_saleorder_ext_aeroo_report1
+msgid "Sale Order with conditions"
+msgstr "Pedido Venta con condiciones"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.report.xml,name:avanzosc_report_contract_ext.avanzosc_purchaseorder_ext_aeroo_report1
+msgid "Purchase Order with conditions"
+msgstr "Pedido Compra con condiciones"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.act_window,name:avanzosc_report_contract_ext.action_custom_report_contract_template_form
+#: model:ir.model,name:avanzosc_report_contract_ext.model_report_contract_template
+#: model:ir.model,name:avanzosc_report_contract_ext.model_report_contract_template_line
+#: view:report.contract.template:0
+#: field:report.contract.template.line,report_contract_template_id:0
+msgid "Report Contract Template"
+msgstr "Listado Plantilla Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: field:report.contract.template.master.line,contract_template_lines_ids:0
+msgid "Contract Template Lines"
+msgstr "Líneas plantilla contrato"
+
+#. module: avanzosc_report_contract_ext
+#: view:contract.select.template.purchase:0
+#: view:contract.select.template.rrhh:0
+#: view:contract.select.template.sale:0
+#: model:ir.ui.menu,name:avanzosc_report_contract_ext.custom_contract_template_menu_view
+#: model:ir.ui.menu,name:avanzosc_report_contract_ext.custom_contract_templates_group_view
+msgid "Contract Templates"
+msgstr "Plantillas de contrato"
+
+#. module: avanzosc_report_contract_ext
+#: selection:contract.conditions,contract_type:0
+#: selection:report.contract.template,contract_type:0
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_report_contract_template_master_line
+msgid "Report Contract Template Master Line"
+msgstr "Listado de Líneas Maestras de Plantillas de Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: view:contract.select.template.purchase:0
+#: view:contract.select.template.rrhh:0
+#: view:contract.select.template.sale:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template:0
+#: field:report.contract.template,name:0
+#: view:report.contract.template.line:0
+#: field:report.contract.template.line,name:0
+#: view:report.contract.template.master.line:0
+#: field:report.contract.template.master.line,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template.master.line:0
+msgid "Search Report Contract Template Master Lines"
+msgstr "Líneas busqueda maestro plantilla informe contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: avanzosc_report_contract_ext
+#: selection:contract.conditions,contract_type:0
+#: selection:report.contract.template,contract_type:0
+msgid "Sale"
+msgstr "Venta"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_hr_contract
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: avanzosc_report_contract_ext
+#: view:contract.select.template.purchase:0
+#: view:contract.select.template.rrhh:0
+#: view:contract.select.template.sale:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: avanzosc_report_contract_ext
+#: view:hr.contract:0
+#: view:purchase.order:0
+#: view:sale.order:0
+msgid "Insert Contract Conditions From Template"
+msgstr "Insertar condiciones de contrato desde plantilla"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.select.template.purchase,contract_template_id:0
+#: field:contract.select.template.rrhh,contract_template_id:0
+#: field:contract.select.template.sale,contract_template_id:0
+msgid "Contract Template"
+msgstr "Plantilla Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: constraint:hr.contract:0
+msgid "Error! contract start-date must be lower then contract end-date."
+msgstr "¡Error! La fecha de inicio de contrato debe ser anterior a la fecha de finalización."
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,contract_type:0
+#: view:report.contract.template:0
+#: field:report.contract.template,contract_type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,code:0
+#: view:report.contract.template.line:0
+#: field:report.contract.template.line,code:0
+msgid "Code"
+msgstr "Codigo"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.act_window,name:avanzosc_report_contract_ext.action_custom_report_contract_template_master_line_form
+#: view:report.contract.template.master.line:0
+msgid "Report Contract Template Master Lines"
+msgstr "Listado de Líneas Maestras de Plantillas de Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.ui.menu,name:avanzosc_report_contract_ext.custom_contract_template_master_lines_menu_view
+msgid "Contract Template Master Lines"
+msgstr "Líneas Maestras de Plantillas de Contrato"
+
+#. module: avanzosc_report_contract_ext
+#: field:hr.contract,particular_contract_conditions_ids:0
+#: field:purchase.order,particular_contract_conditions_ids:0
+#: field:sale.order,particular_contract_conditions_ids:0
+msgid "Particular Contract Conditions"
+msgstr "Condiciones particulares contrato"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template.line:0
+msgid "Search Report Contract Template Line"
+msgstr "Línea búsqueda plantilla informe contrato"
+
+#. module: avanzosc_report_contract_ext
+#: view:report.contract.template.line:0
+msgid "Report Contract Template Line"
+msgstr "Línea plantilla informe contrato"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.actions.report.xml,name:avanzosc_report_contract_ext.avanzosc_reportcontract_ext_aeroo_report1
+msgid "Contract with conditions"
+msgstr "Contratos con condiciones"
+
+#. module: avanzosc_report_contract_ext
+#: model:ir.model,name:avanzosc_report_contract_ext.model_contract_conditions
+msgid "contract.conditions"
+msgstr "contract.conditions"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,sale_order1_ids:0
+#: field:contract.conditions,sale_order2_ids:0
+msgid "Sale Orders"
+msgstr "Pedidos venta"
+
+#. module: avanzosc_report_contract_ext
+#: field:contract.conditions,purchase_order1_ids:0
+#: field:contract.conditions,purchase_order2_ids:0
+msgid "Purchase Orders"
+msgstr "Pedidos compra"
+
